@@ -23,9 +23,9 @@ function verifierPayload(array $data, array $file)
         return "Le prix ne peut pas être inférieur à 0";
     }
 
-    if (($data['product-price']) > 100)
+    if (($data['product-price']) > 99.99)
     {
-        return "Le prix ne doit pas dépasser 100€";
+        return "Le prix ne doit pas dépasser 99.99€";
     }
 
     if (!isset($data['product-type']) || $data['product-type'] === '')
